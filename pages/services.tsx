@@ -1,18 +1,13 @@
 import Head from 'next/head';
 import {
-  addOns,
   CAR_IMAGE,
-  detailAddOns,
-  detailPackages,
   FALL_IMAGE,
-  gardenRates,
   Seo,
   ServiceCard,
   services,
   SiteShell,
   SectionHeading,
-  vehicleAdjustments,
-  yardAdjustments,
+  detailPackages,
 } from '../components/site';
 
 export default function Services() {
@@ -21,9 +16,10 @@ export default function Services() {
       <Head>
         <Seo
           title="Services & Pricing | Rockaway Shine"
-          description="Explore mobile car detailing, lawn and garden services, seasonal fall cleanup, and published pricing from Rockaway Shine in Morris County, NJ."
+          description="Explore mobile car detailing, lawn and garden services, and seasonal fall cleanup from Rockaway Shine in Morris County, NJ."
         />
       </Head>
+
       <main>
         <section className="page-hero">
           <div className="container page-hero-inner">
@@ -47,9 +43,10 @@ export default function Services() {
               eyebrow="Mobile car detailing"
               title="Choose a detail that fits your vehicle."
             >
-              Packages come to your driveway. Vehicle-size adjustments and
-              optional extras are listed below.
+              Packages come to your driveway. Choose your vehicle size and any
+              optional extras in the instant quote calculator.
             </SectionHeading>
+
             <div className="detail-package-grid">
               {detailPackages.map((pkg, index) => (
                 <article className="detail-package" key={pkg.title}>
@@ -61,6 +58,7 @@ export default function Services() {
                     />
                     <span>0{index + 1}</span>
                   </div>
+
                   <div className="package-content">
                     <div className="package-top">
                       <h3>{pkg.title}</h3>
@@ -69,40 +67,16 @@ export default function Services() {
                     <p>{pkg.summary}</p>
                     <span className="package-time">{pkg.time}</span>
                     <ul>
-                      {pkg.includes.map(item => <li key={item}>{item}</li>)}
+                      {pkg.includes.map(item => (
+                        <li key={item}>{item}</li>
+                      ))}
                     </ul>
                     <a className="text-link" href="../contact/#quote">
-                      Request this package <span aria-hidden="true">↗</span>
+                      Get an instant quote <span aria-hidden="true">↗</span>
                     </a>
                   </div>
                 </article>
               ))}
-            </div>
-            <div className="pricing-foot-grid">
-              <div className="adjustment-panel">
-                <h3>Vehicle-size adjustment</h3>
-                <p>Added to a detailing package.</p>
-                <div className="adjustment-list">
-                  {vehicleAdjustments.map(item => (
-                    <div key={item.name}>
-                      <span>{item.name}</span>
-                      <strong>{item.price}</strong>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="adjustment-panel">
-                <h3>Detailing add-ons</h3>
-                <p>Optional extras for your detail.</p>
-                <div className="adjustment-list">
-                  {detailAddOns.map(item => (
-                    <div key={item.name}>
-                      <span>{item.name}</span>
-                      <strong>{item.price}</strong>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -114,11 +88,13 @@ export default function Services() {
           >
             One-time yard projects and seasonal help across Morris County.
           </SectionHeading>
+
           <div className="service-grid service-grid-large">
             {services.map((item, index) => (
               <ServiceCard key={item.title} item={item} index={index} />
             ))}
           </div>
+
           <div className="seasonal-inline seasonal-highlight">
             <div>
               <div className="eyebrow">Current seasonal service</div>
@@ -136,57 +112,6 @@ export default function Services() {
               alt="Residential backyard with fallen leaves and garden foliage"
               loading="lazy"
             />
-          </div>
-        </section>
-
-        <section className="section section-darker" id="yard-estimates">
-          <div className="container">
-            <SectionHeading
-              eyebrow="Yard service estimates"
-              title="A clear starting point for yard work."
-            >
-              The source calculator labels these base rates as placeholders.
-              We’ll confirm the job scope and final price before scheduling.
-            </SectionHeading>
-            <div className="rate-grid">
-              {gardenRates.map(item => (
-                <div className="rate-card" key={item.name}>
-                  <span>{item.name}</span>
-                  <strong>{item.price}</strong>
-                  <small>placeholder estimate</small>
-                </div>
-              ))}
-            </div>
-            <div className="pricing-foot-grid">
-              <div className="adjustment-panel">
-                <h3>Yard-size adjustment</h3>
-                <p>Added to a yard service estimate.</p>
-                <div className="adjustment-list">
-                  {yardAdjustments.map(item => (
-                    <div key={item.name}>
-                      <span>{item.name}</span>
-                      <strong>{item.price}</strong>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="adjustment-panel">
-                <h3>Yard-care add-ons</h3>
-                <p>Optional extras for a yard service.</p>
-                <div className="adjustment-list">
-                  {addOns.map(item => (
-                    <div key={item.name}>
-                      <span>{item.name}</span>
-                      <strong>{item.price}</strong>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <p className="pricing-note">
-              All yard calculator prices are placeholders until the final
-              property quote. No yard estimate is a confirmed booking.
-            </p>
           </div>
         </section>
       </main>
