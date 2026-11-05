@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Quote calculator submits customer details to Formspree",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "service category selection",
+      "service option selection",
+      "add-on toggles",
+      "quantity updates",
+      "live total calculation",
+      "Formspree quote submission",
+      "submission success and error feedback"
+    ],
+    "description": "Verifies quote details are submitted to the configured Formspree endpoint without opening the visitor's email application.",
+    "steps": [
+      "Open Get a Quote",
+      "Choose a service, service option, add-ons, and quantity",
+      "Enter a valid name and email address",
+      "Submit the quote request",
+      "Verify the form displays a success confirmation after a successful response"
+    ],
+    "expected": "The browser sends the selected service, options, add-ons, quantity, estimate, and customer contact details to the configured Formspree form. A success confirmation appears in place without navigating away; failed submissions display an error and allow retry."
+  },
+  {
+    "name": "Quote form handles a failed Formspree submission",
+    "viewport": "mobile",
+    "covers": [
+      "Formspree network error handling",
+      "submission error feedback",
+      "retry after failed request"
+    ],
+    "description": "Checks that a failed request does not falsely tell the customer their quote was sent.",
+    "steps": [
+      "Open the quote form on a mobile viewport",
+      "Enter valid customer details",
+      "Simulate a Formspree submission failure",
+      "Submit the form"
+    ],
+    "expected": "The form shows an error message, does not clear the entered customer details, and allows the customer to retry."
+  },
+  {
+    "name": "Browse the updated site on mobile",
+    "viewport": "mobile",
+    "covers": [
+      "mobile navigation",
+      "mobile responsive quote calculator",
+      "logo display",
+      "form controls"
+    ],
+    "description": "Checks that the existing visual design and new calculator fit a narrow screen.",
+    "steps": [
+      "Open the homepage at a mobile viewport",
+      "Open the menu and select Get a quote",
+      "Select a service and toggle an add-on",
+      "Scroll through customer fields"
+    ],
+    "expected": "Navigation works, logo is visible, calculator controls fit without horizontal overflow, and the quote summary remains readable."
+  },
+  {
+    "name": "Branded not found page and favicon",
+    "viewport": "desktop",
+    "covers": [
+      "404 error page",
+      "logo favicon metadata",
+      "home recovery link"
+    ],
+    "description": "Checks the branded 404 page and favicon metadata.",
+    "steps": [
+      "Open /404.html",
+      "Review the logo and not-found message",
+      "Use Back to home"
+    ],
+    "expected": "The custom 404 page loads, uses the Rockaway logo favicon and returns to the homepage."
+  },
+  {
+    "name": "Compare work photos and open the customer review contact",
+    "viewport": "mobile",
+    "covers": [
+      "before-and-after slider interaction",
+      "touch-friendly comparison control",
+      "responsive work gallery",
+      "customer review invitation",
+      "review email link"
+    ],
+    "description": "Verifies visitors can compare project photos on a phone and can contact the business to share feedback.",
+    "steps": [
+      "Open Our Work on a mobile viewport",
+      "Drag the Fall Cleanup before-and-after slider from left to right",
+      "Confirm the reveal position changes and both labels remain visible",
+      "Open Reviews and select Share your feedback"
+    ],
+    "expected": "The image reveal responds to touch and pointer input without horizontal page scrolling. The Reviews section explains how to share feedback and opens an email addressed to the business."
+  }
+]
