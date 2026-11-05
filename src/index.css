@@ -644,6 +644,107 @@ h2 em {  color: var(--green);
 }
 .area-tags svg {
   color: var(--green);
+
+.review-preview-label {
+  color: #91b69a;
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  margin: 0 auto 12px;
+  max-width: 900px;
+}
+
+.review-card {
+  max-width: 900px;
+  margin: 0 auto 18px;
+  padding: 26px 25px;
+  border: 1px solid #304535;
+  background: #090e0b;
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.review-stars {
+  display: flex;
+  gap: 4px;
+  color: #9bc8a5;
+}
+
+.sample-badge {
+  border: 1px solid #304535;
+  color: #a5c8ad;
+  padding: 7px 12px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.review-quote {
+  font-size: 21px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.review-divider {
+  height: 1px;
+  background: #26332a;
+  margin-bottom: 15px;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #203b2b;
+  color: #a5c8ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.review-author h4 {
+  margin: 0 0 4px;
+  font-size: 12px;
+}
+
+.review-author p {
+  margin: 0;
+  color: #91a197;
+  font-size: 10px;
+}
+
+.review-invite {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #304535;
+  background: #090e0b;
+  padding: 38px 25px 32px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .review-card {
+    padding: 21px 18px;
+  }
+
+  .review-quote {
+    font-size: 18px;
+  }
+
+  .review-invite {
+    padding: 32px 18px;
+  }
 }
 .contact-section {
   padding-top: 15px;
