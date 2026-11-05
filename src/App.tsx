@@ -243,6 +243,22 @@ function App() {
         <div className="about-copy"><p className="eyebrow">A HANDS-ON LOCAL TEAM</p><h2>THE DETAILS<br/>MAKE THE <em>DIFFERENCE.</em></h2><p>We’re a local team focused on making property and vehicle care straightforward. Whether it’s keeping up with the lawn, clearing seasonal debris, or giving your car a refresh, we take pride in doing the job right.</p><ul><li><CheckCircle2 size={17}/> Friendly, direct communication</li><li><CheckCircle2 size={17}/> Flexible seasonal services</li><li><CheckCircle2 size={17}/> Serving our local communities</li></ul><a className="text-link green-link" href="#quote-calculator">Talk about your project <ArrowUpRight size={16}/></a></div>
       </section>
 
+<div className="reviews-heading">
+  <div>
+    <p className="eyebrow">
+      <Star size={14} /> YOUR WORDS MATTER
+    </p>
+    <h2>
+      BUILT ON <em>GOOD WORK.</em>
+    </h2>
+  </div>
+
+  <p className="section-intro">
+    We’re building our customer review wall. If we’ve helped
+    with your property or vehicle, we’d appreciate hearing
+    how we did.
+  </p>
+</div>
 
 <section className="reviews-section section-pad" id="reviews">
   <div className="review-card">
