@@ -199,7 +199,6 @@ function App() {
           <p className="section-intro">Slide to compare before and after. We’ll add photos of our own completed jobs here as the gallery grows.</p>
         </div>
         <div className="work-grid">{workExamples.map(example => <BeforeAfterCard key={example.title} example={example}/>)}</div>
-        <p className="work-photo-note">Photo slots are ready. Add your images in <code>public/images/work/</code> using the filenames shown below.</p>
       </section>
 
       <section className="quote-section section-pad" id="quote-calculator">
