@@ -243,29 +243,31 @@ function App() {
         <div className="about-copy"><p className="eyebrow">A HANDS-ON LOCAL TEAM</p><h2>THE DETAILS<br/>MAKE THE <em>DIFFERENCE.</em></h2><p>We’re a local team focused on making property and vehicle care straightforward. Whether it’s keeping up with the lawn, clearing seasonal debris, or giving your car a refresh, we take pride in doing the job right.</p><ul><li><CheckCircle2 size={17}/> Friendly, direct communication</li><li><CheckCircle2 size={17}/> Flexible seasonal services</li><li><CheckCircle2 size={17}/> Serving our local communities</li></ul><a className="text-link green-link" href="#quote-calculator">Talk about your project <ArrowUpRight size={16}/></a></div>
       </section>
 
-<div className="reviews-heading">
-  <div>
-    <p className="eyebrow">
-      <Star size={14} /> YOUR WORDS MATTER
+<section className="reviews-section section-pad" id="reviews">
+
+  <div className="reviews-heading">
+    <div>
+      <p className="eyebrow">
+        <Star size={14} /> YOUR WORDS MATTER
+      </p>
+      <h2>
+        BUILT ON <em>GOOD WORK.</em>
+      </h2>
+    </div>
+
+    <p className="section-intro">
+      We’re building our customer review wall. If we’ve helped
+      with your property or vehicle, we’d appreciate hearing
+      how we did.
     </p>
-    <h2>
-      BUILT ON <em>GOOD WORK.</em>
-    </h2>
   </div>
 
-  <p className="section-intro">
-    We’re building our customer review wall. If we’ve helped
-    with your property or vehicle, we’d appreciate hearing
-    how we did.
-  </p>
-</div>
-
-<section className="reviews-section section-pad" id="reviews">
   <div className="review-card">
     <div className="review-top">
       <div className="review-stars">
         <Star /><Star /><Star /><Star /><Star />
       </div>
+    </div>
 
     <blockquote className="review-quote">
       “Very nice work !! And I really liked your lawn mowing
@@ -278,7 +280,7 @@ function App() {
       <div className="review-avatar">S</div>
       <div>
         <h4>Sebastiano</h4>
-        <p>Customer review preview</p>
+        <p>Customer review</p>
       </div>
     </div>
   </div>
@@ -297,6 +299,7 @@ function App() {
       SHARE YOUR FEEDBACK <ArrowUpRight size={16} />
     </a>
   </div>
+
 </section>
 
       <section className="area-section section-pad" id="service-area"><div className="area-top"><div><p className="eyebrow">ROOTED IN THE COMMUNITY</p><h2>PROUD TO SERVE<br/><em>OUR NEIGHBORS.</em></h2></div><p>Based in the Rockaway area and serving nearby Morris County communities. Not sure if we cover your address? Just ask.</p></div><div className="area-tags">{serviceAreas.map(area=><span key={area}>{area}<ArrowUpRight size={13}/></span>)}</div></section>
