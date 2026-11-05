@@ -250,8 +250,6 @@ function App() {
       <div className="review-stars">
         <Star /><Star /><Star /><Star /><Star />
       </div>
-      <span className="sample-badge">SAMPLE</span>
-    </div>
 
     <blockquote className="review-quote">
       “Very nice work !! And I really liked your lawn mowing
