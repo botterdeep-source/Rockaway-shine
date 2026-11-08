@@ -243,6 +243,7 @@ function App() {
         <div className="about-copy"><p className="eyebrow">A HANDS-ON LOCAL TEAM</p><h2>THE DETAILS<br/>MAKE THE <em>DIFFERENCE.</em></h2><p>We’re a local team focused on making property and vehicle care straightforward. Whether it’s keeping up with the lawn, clearing seasonal debris, or giving your car a refresh, we take pride in doing the job right.</p><ul><li><CheckCircle2 size={17}/> Friendly, direct communication</li><li><CheckCircle2 size={17}/> Flexible seasonal services</li><li><CheckCircle2 size={17}/> Serving our local communities</li></ul><a className="text-link green-link" href="#quote-calculator">Talk about your project <ArrowUpRight size={16}/></a></div>
       </section>
 
+
 <section className="reviews-section section-pad" id="reviews">
 
   <div className="reviews-heading">
@@ -256,33 +257,122 @@ function App() {
     </div>
 
     <p className="section-intro">
-      We’re building our customer review wall. If we’ve helped
-      with your property or vehicle, we’d appreciate hearing
-      how we did.
+      We’re proud of the work we do and the people we work with.
+      Here's what our customers have to say.
     </p>
   </div>
 
-  <div className="review-card">
-    <div className="review-top">
-      <div className="review-stars">
-        <Star /><Star /><Star /><Star /><Star />
+  <div className="reviews-grid">
+
+    {/* Sebastiano */}
+    <div className="review-card">
+      <div className="review-top">
+        <div className="review-stars">
+          <Star /><Star /><Star /><Star /><Star />
+        </div>
+      </div>
+      <blockquote className="review-quote">
+        “Very nice work !! And I really liked your lawn mowing
+        technique especially with those stripes! Keep on!”
+      </blockquote>
+      <div className="review-divider" />
+      <div className="review-author">
+        <div className="review-avatar">S</div>
+        <div>
+          <h4>Sebastiano</h4>
+          <p>Customer review</p>
+        </div>
       </div>
     </div>
 
-    <blockquote className="review-quote">
-      “Very nice work !! And I really liked your lawn mowing
-      technique especially with those stripes! Keep on!”
-    </blockquote>
-
-    <div className="review-divider" />
-
-    <div className="review-author">
-      <div className="review-avatar">S</div>
-      <div>
-        <h4>Sebastiano</h4>
-        <p>Customer review</p>
+    {/* Chris */}
+    <div className="review-card">
+      <div className="review-top">
+        <div className="review-stars">
+          <Star /><Star /><Star /><Star /><Star />
+        </div>
+      </div>
+      <blockquote className="review-quote">
+        “The crew did a great job pulling weeds and cleaning
+        everything up. They arrived on time and were easy to
+        deal with. I will be using them for future projects.
+        Highly recommend.”
+      </blockquote>
+      <div className="review-divider" />
+      <div className="review-author">
+        <div className="review-avatar">C</div>
+        <div>
+          <h4>Chris</h4>
+          <p>Customer review</p>
+        </div>
       </div>
     </div>
+
+    {/* Giselle Knaub */}
+    <div className="review-card">
+      <div className="review-top">
+        <div className="review-stars">
+          <Star /><Star /><Star /><Star /><Star />
+        </div>
+      </div>
+      <blockquote className="review-quote">
+        “So I needed yard clearing and mowing and these guys
+        did a great job! Easy to book and excellent communication.
+        They were very prompt and followed my instructions
+        carefully as I have an overgrown cut flower garden.”
+      </blockquote>
+      <div className="review-divider" />
+      <div className="review-author">
+        <div className="review-avatar">G</div>
+        <div>
+          <h4>Giselle Knaub</h4>
+          <p>Customer review</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Frank */}
+    <div className="review-card">
+      <div className="review-top">
+        <div className="review-stars">
+          <Star /><Star /><Star /><Star /><Star />
+        </div>
+      </div>
+      <blockquote className="review-quote">
+        “A truly hard-working and highly professional team
+        which is not easy to find these days.”
+      </blockquote>
+      <div className="review-divider" />
+      <div className="review-author">
+        <div className="review-avatar">F</div>
+        <div>
+          <h4>Frank</h4>
+          <p>Customer review</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Timothy Westland */}
+    <div className="review-card">
+      <div className="review-top">
+        <div className="review-stars">
+          <Star /><Star /><Star /><Star /><Star />
+        </div>
+      </div>
+      <blockquote className="review-quote">
+        “Amazing job on my car. It looks like I bought it brand
+        new yesterday. I would highly recommend.”
+      </blockquote>
+      <div className="review-divider" />
+      <div className="review-author">
+        <div className="review-avatar">T</div>
+        <div>
+          <h4>Timothy Westland</h4>
+          <p>Customer review</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div className="review-invite">
